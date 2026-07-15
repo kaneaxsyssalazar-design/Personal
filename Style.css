@@ -12,6 +12,72 @@ body {
   font-family: sans-serif;
   color: white;
   margin: 0;
+  padding: 20px; /* Reduced from 40px to prevent overflow clipping on small mobile displays */
+  background-image: url('https://i.pinimg.com/originals/07/5a/7e/075a7eed8935195a3a026b999c18a535.gif'); 
+  background-size: cover;
+  background-position: center; /* Ensures background GIF centers perfectly on all aspect ratios */
+  overflow: hidden; /* Prevents scrollbars from flashing during button expansions or shaking animations */
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+#question {
+  padding: 20px;
+  font-size: 2.2rem; /* Distinct sizing hierarchy for the main prompt */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Elevates legibility against bright areas of the GIF background */
+}
+
+.container {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  min-height: 80px; /* Reserves functional buffer region when buttons scale and shift */
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 14px 26px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold; /* Accentuates microcopy interaction clarity */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Integrates tactile elevation depth */
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background 0.3s ease; /* Bouncy, organic physics feel */
+}
+
+#yesBtn {
+  background: #ff4d6d;
+  color: white;
+}
+
+#noBtn {
+  background: #e0e0e0;
+  color: #4a4a4a; /* Generates accessible typographical contrast over gray base background */
+  display: inline-block; /* Stabilizes dynamic structural updates */
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: sans-serif;
+  color: white;
+  margin: 0;
   padding: 40px;
   background-image: url('https://i.pinimg.com/originals/07/5a/7e/075a7eed8935195a3a026b999c18a535.gif'); 
   background-size: cover;
