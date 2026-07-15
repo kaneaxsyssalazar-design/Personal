@@ -152,13 +152,13 @@ yesBtn.addEventListener("click", () => {
       
       <div class="message-box">
         <div class="heart-decorator">💝</div>
-        <p class="letter-header">Dear ko,</p>
+        <p class="letter-header">Dear Bossing ko,</p>
         <p>
           I hope your special day is absolutely packed with as much laughter, joy, 
           and sweet surprises as you bring into my world every single day. 
         </p>
         <p>
-          Thank you for  🥳✨
+          Thank you for just being you. I know we just knew each other for just a month but I do want to make more memories with you. Let's celebrate the wonderful person you are! 🥳✨
         </p>
         <p class="signature">With love & hugs, Kane ❤️</p>
       </div>
